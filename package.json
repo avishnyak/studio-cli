@@ -4,7 +4,7 @@
   "description": "Studio agent CLI - monitor/start/stop studio microservices",
   "scripts": {
     "lint": "eslint \"lib/**\" \"bin/**\"",
-    "test": "lint && mocha -R spec ./tests/*_spec.js"
+    "test": "npm run lint && mocha -R spec ./tests/*_spec.js"
   },
   "repository": {
     "type": "git",
