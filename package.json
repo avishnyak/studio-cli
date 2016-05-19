@@ -1,0 +1,46 @@
+{
+  "name": "studio-cli",
+  "version": "0.0.1",
+  "description": "Studio agent CLI - monitor/start/stop studio microservices",
+  "scripts": {
+    "lint": "eslint \"lib/**\" \"bin/**\"",
+    "test": "lint && mocha -R spec ./tests/*_spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avishnyak/studio-cli.git"
+  },
+  "keywords": [
+    "studio",
+    "microservices",
+    "agent",
+    "cli"
+  ],
+  "author": "Anton Vishnyak",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avishnyak/studio-cli/issues"
+  },
+  "homepage": "https://github.com/avishnyak/studio-cli#readme",
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "bin": {
+    "grunt": "bin/studio"
+  },
+  "files": [
+    "bin",
+    "completion",
+    "lib"
+  ],
+  "dependencies": {
+    "wiz-cliparse": "^0.5.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^2.10.2",
+    "mocha": "^2.4.5",
+    "mocha-sinon": "^1.1.5",
+    "sinon": "^1.17.4"
+  }
+}
